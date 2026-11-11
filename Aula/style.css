@@ -1,0 +1,100 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5effa;
+    color: #44334f;
+}
+
+header {
+    background: linear-gradient(135deg, #b58add, #7946a8);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(100, 60, 130, 0.12);
+}
+
+.card h2 {
+    color: #8956b8;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d7c2e9;
+    border-radius: 8px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #8956b8;
+}
+
+button {
+    background: #8956b8;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #673b91;
+}
+
+#listaMoradores {
+    list-style: none;
+}
+
+#listaMoradores li {
+    background: #f2eafa;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    overflow-wrap: anywhere;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #806a91;
+}
+
+@media (max-width: 700px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
